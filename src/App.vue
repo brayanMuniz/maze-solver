@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>Maze Solver</div>
+  <p>Todo:</p>
+
+  <ul>
+    <li>Generate maze</li>
+    <li>Add start and end points for maze</li>
+    <li>Make an algorithim to solve maze</li>
+  </ul>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+@Options({})
+export default class App extends Vue {}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
